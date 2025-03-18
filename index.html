@@ -91,6 +91,16 @@
                 </ul>
             </div>
 
+            <div class="mb-4">
+                <div class="mb-2">Единца измерения <span class="fw-bold">шт</span></div>
+                <div class="small text-secondary mb-2 line-clamp">
+                    Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили
+                </div>
+                <button type="button" class="link-secondary border-0 bg-transparent p-0 border-bottom" style="border-style: dashed !important;" data-bs-toggle="modal" data-bs-target="#descriptionModal">
+                    Показать описание
+                </button>
+            </div>
+
             <div>
                 <div class="bg-light p-3 rounded-3 mb-4">
                     <div class="h5 mb-3">Режим</div>
@@ -133,7 +143,10 @@
 
                 <div class="bg-light p-3 rounded-3 mb-4">
                     <button class="btn-collapse border-0 bg-transparent p-0 d-flex align-items-center justify-content-between w-100 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRates" aria-expanded="false" aria-controls="collapseRates">
-                        <span class="h5 mb-0">Ставки</span>
+                        <span class="d-flex align-items-baseline gap-2">
+                            <span class="h5 mb-0">Ставки</span>
+                            <span class="bg-primary fw-bold d-flex justify-content-center align-items-center rounded-circle" style="min-width: 24px; min-height: 24px;">5</span>
+                        </span>
                         <i class="fa-solid fa-chevron-down"></i>
                     </button>
                     <div class="collapse" id="collapseRates">
@@ -145,7 +158,10 @@
 
                 <div class="bg-light p-3 rounded-3 mb-4">
                     <button class="btn-collapse border-0 bg-transparent p-0 d-flex align-items-center justify-content-between w-100 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDocs" aria-expanded="false" aria-controls="collapseDocs">
-                        <span class="h5 mb-0">Документы</span>
+                        <span class="d-flex align-items-baseline gap-2">
+                            <span class="h5 mb-0">Документы</span>
+                            <span class="bg-primary fw-bold d-flex justify-content-center align-items-center rounded-circle" style="min-width: 24px; min-height: 24px;">4</span>
+                        </span>
                         <i class="fa-solid fa-chevron-down"></i>
                     </button>
                     <div class="collapse" id="collapseDocs">
@@ -358,6 +374,42 @@
             </div>
         </div>
         <!-- ДЕРЕВО КОДОВ КОНЕЦ -->
+
+        <!-- ОПИСАНИЕ НАЧАЛО -->
+        <div class="modal fade" id="descriptionModal" tabindex="-1" aria-labelledby="descriptionModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title h5" id="descriptionModalLabel">Описание</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body small">
+                        <p class="fw-bold">8703 Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили:</p>
+                        <table class="table table-striped table-hover small">
+                            <tbody>
+                                <tr>
+                                    <td><span class="text-nowrap">0000 00</span></td>
+                                    <td>– транспортные средства, специально предназначенные для движения по снегу; автомобили для перевозки игроков в гольф и аналогичные транспортные средства:</td>
+                                    <td><span class="fw-bold">шт</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-nowrap">0000 00 000</span></td>
+                                    <td>– – транспортные средства, специально предназначенные для движения по снегу, с поршневым двигателем внутреннего сгорания с воспламенением от сжатия (дизелем или полудизелем), или с поршневым двигателем внутреннего сгорания с искровым зажиганием</td>
+                                    <td><span class="fw-bold">–</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-nowrap">0000 00 000 0</span></td>
+                                    <td>– – прочие</td>
+                                    <td><span class="fw-bold">шт</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>В данную товарную позицию включаются моторные транспортные средства различных видов (включая моторные транспортные средства–амфибии), предназначенные для перевозки людей; однако в нее не включаются моторные транспортные средства товарной позиции 8702. У транспортных средств данной товарной позиции могут быть двигатели любого типа (двигатели внутреннего сгорания, электродвигатели, газотурбинные двигатели, комбинации поршневого двигателя внутреннего сгорания с одним или несколькими электрическими двигателями и т.д.).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ОПИСАНИЕ КОНЕЦ-->
 
         <!-- КАЛЬКУЛЯТОР НАЧАЛО -->
         <div class="modal fade" id="calcModal" tabindex="-1" aria-labelledby="calcModalLabel" aria-hidden="true">
