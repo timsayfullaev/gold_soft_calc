@@ -190,3 +190,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0 !important;
     border-bottom: none !important;
 }
+
+.form-check-input:checked[type=checkbox] {
+    --bs-form-check-bg-image: url(../img/check.svg);
+}
+
+.btn-collapse .fa-chevron-down {
+    transition: all .25s;
+}
+
+.btn-collapse[aria-expanded="true"] .fa-chevron-down {
+    transform: rotate(-180deg);
+}

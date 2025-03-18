@@ -91,10 +91,73 @@
                 </ul>
             </div>
 
-            <div class="">
+            <div>
                 <div class="bg-light p-3 rounded-3 mb-4">
-                    <div class="fw-bold">Режим</div>
+                    <div class="h5 mb-3">Режим</div>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Выбор режима">
+                            <option value="1">Импорт</option>
+                            <option value="2">Экспорт</option>
+                            <option value="3">Временный ввоз</option>
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckForOwn">
+                        <label class="form-check-label" for="flexCheckForOwn">
+                            Для собственных нужд
+                        </label>
+                    </div>
                 </div>
+
+                <div class="bg-light p-3 rounded-3 mb-4">
+                    <div class="h5 mb-3">Страны</div>
+                    <div class="mb-3">
+                        <label for="countryDeparture" class="form-label">Страна отправления</label>
+                        <select class="form-select" aria-label="Выбор страны отправления" id="countryDeparture">
+                            <option value="1">000 - Неизвестна</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="countryOrigin" class="form-label">Страна происхождения</label>
+                        <select class="form-select" aria-label="Выбор страны происхождения" id="countryOrigin">
+                            <option value="1">000 - Неизвестна</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="countryTrading" class="form-label">Торгующая страна</label>
+                        <select class="form-select" aria-label="Выбор торгующей страны" id="countryTrading">
+                            <option value="1">000 - Неизвестна</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="bg-light p-3 rounded-3 mb-4">
+                    <button class="btn-collapse border-0 bg-transparent p-0 d-flex align-items-center justify-content-between w-100 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRates" aria-expanded="false" aria-controls="collapseRates">
+                        <span class="h5 mb-0">Ставки</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="collapse" id="collapseRates">
+                        <div class="pt-3">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-light p-3 rounded-3 mb-4">
+                    <button class="btn-collapse border-0 bg-transparent p-0 d-flex align-items-center justify-content-between w-100 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDocs" aria-expanded="false" aria-controls="collapseDocs">
+                        <span class="h5 mb-0">Документы</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="collapse" id="collapseDocs">
+                        <div class="pt-3">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#calcModal">
+                    <i class="fa-solid fa-calculator"></i> Открыть калькулятор
+                </button>
             </div>
         </div>
 
@@ -296,6 +359,22 @@
         </div>
         <!-- ДЕРЕВО КОДОВ КОНЕЦ -->
 
+        <!-- КАЛЬКУЛЯТОР НАЧАЛО -->
+        <div class="modal fade" id="calcModal" tabindex="-1" aria-labelledby="calcModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title h5" id="calcModalLabel">Калькулятор</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- КАЛЬКУЛЯТОР КОНЕЦ-->
+
         <!-- ЭКСПЕРТНЫЙ РЕЖИМ КОНЕЦ -->
 
 
@@ -339,7 +418,7 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title small" id="MenuItemModalLabel">Предисловие</h1>
+                    <h1 class="modal-title h6" id="MenuItemModalLabel">Предисловие</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body small">
