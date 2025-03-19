@@ -151,7 +151,40 @@
                     </button>
                     <div class="collapse" id="collapseRates">
                         <div class="pt-3">
-                            
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="h6 mb-1">10. Таможенный сбор</div>
+                                <div class="small">
+                                    <div class="mb-1">От 1 до 75 БРВ</div>
+                                    <div class="text-secondary">ПКМ 700 от 09.11.2020</div>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="h6 mb-1">20. Таможенная пошлина</div>
+                                <div class="small">
+                                    <div class="mb-1">От 0% до 60% плюс 3,6$ за куб. см</div>
+                                    <div class="text-secondary">ПП №3818 от 29.06.2018</div>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="h6 mb-1">27. Акцизный налог</div>
+                                <div class="small">
+                                    <div class="mb-1">От 340 000 до 578 000 сум за 1 т</div>
+                                    <div class="text-secondary">НК статья 289</div>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="h6 mb-1">29. НДС</div>
+                                <div class="small">
+                                    <div>От 12% до 24%</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="h6 mb-1">79. Утилизационный сбор</div>
+                                <div class="small">
+                                    <div class="mb-1">От 30 до 90 БРВ</div>
+                                    <div class="text-secondary">ПКМ 347 от 02.06.2020</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -166,12 +199,52 @@
                     </button>
                     <div class="collapse" id="collapseDocs">
                         <div class="pt-3">
-                            
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="h6 mb-1">Лицензии</div>
+                                <div class="small">
+                                    <div>Лицензий не требуется</div>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="h6 mb-1">Сертификаты</div>
+                                <div class="small">
+                                    <ul class="mb-0">
+                                        <li class="mb-1">При импорте новых колесных транспортных средств категорий «M» и «N», оснащенных газовыми, бензиновыми и дизельными двигателями, требуется экологический сертификат о соответствии требованиям экологического стандарта не ниже Евро-4 - <span class="text-secondary"> ПКМ № 50 от 30.01.2020</span></li>
+                                        <li>По данному товару необходимо предоставить сертификат соответствия или письмо Узстандарта (Сертификат не требуется для предметов материально-технического снабжения и снаряжения, топлива, продовольствия и пр. тов., необходимых для нормальной эксплуатации предприятиями и организациями РУ, и арендованных этими предприятиями транспортных средств, осуществляющих международные перевозки (Глава 2.1, пункт 50.1, МЮ 1458 от 18 марта 2005 г.)) - <span class="text-secondary">ПКМ 43 от 30.01.2021</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="h6 mb-1">Льготы</div>
+                                <div class="small">
+                                    <div>Льготы не предусмотрены</div>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="h6 mb-1">Иные требования</div>
+                                <div class="small">
+                                    <ul class="mb-0">
+                                        <li class="mb-1">Вывоз через товарносырьевые биржи осуществляется только за свободно конвертируемую валюту. - <span class="text-secondary">ПКМ № 174 от 15.04.1999г</span>.</li>
+                                        <li>Товар входит в перечень потребительских товаров. - <span class="text-secondary">МЮ 2500 от 12.08.2013г</span>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-danger fw-bold mb-3"><i class="fa-solid fa-triangle-exclamation"></i> Важно!</div>
+                                <div class="small">
+                                    <div class="mb-3">
+                                        В данном разделе могут <span class="text-danger fw-bold">отсутствовать</span> те НПА, в которых <span class="text-danger fw-bold">нет конкретных сведений о группах и кодах</span> товаров. Тем не менее, они должны приниматься в расчёт при оформлении.
+                                    </div>
+                                    <div>
+                                        Например, формулировка <span class="fw-bold">«Медицинское изделие»</span> — слишком размыта и может подойти к большей части всех кодов ТНВЭД. Решение о том, причислять ли декларируемый товар к медицинским изделиям, в каждом случае зависит от контекста и должно быть принято декларирующим лицом.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#calcModal">
+                <button type="button" class="btn btn-primary w-100" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCalc" aria-controls="offcanvasCalc">
                     <i class="fa-solid fa-calculator"></i> Открыть калькулятор
                 </button>
             </div>
@@ -412,24 +485,155 @@
         <!-- ОПИСАНИЕ КОНЕЦ-->
 
         <!-- КАЛЬКУЛЯТОР НАЧАЛО -->
-        <div class="modal fade" id="calcModal" tabindex="-1" aria-labelledby="calcModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title h5" id="calcModalLabel">Калькулятор</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="offcanvasCalc" aria-labelledby="offcanvasCalcLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasCalcLabel"><i class="fa-solid fa-calculator me-1"></i> Калькулятор</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                
+                <div class="mb-5">
+                    <div class="mb-1">
+                        <span class="fw-bold me-1">8703 80 000 9</span>
+                        <button type="button" class="link-secondary border-0 bg-transparent p-0 border-bottom" style="border-style: dashed !important;">Изменить</button>
                     </div>
-                    <div class="modal-body">
-                        
+                    <div>Единца измерения <span class="fw-bold">шт</span></div>
+                </div>
+
+                <div class="mb-5">
+                    <div class="h6 mb-3"><i class="fa-solid fa-globe text-secondary me-1"></i> Страны</div>
+                    <div class="mb-3">
+                        <label for="countryDepartureCalc" class="form-label">Страна отправления</label>
+                        <select class="form-select" aria-label="Выбор страны отправления" id="countryDepartureCalc">
+                            <option value="1">000 - Неизвестна</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="countryOriginCalc" class="form-label">Страна происхождения</label>
+                        <select class="form-select" aria-label="Выбор страны происхождения" id="countryOriginCalc">
+                            <option value="1">000 - Неизвестна</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="countryTradingCalc" class="form-label">Торгующая страна</label>
+                        <select class="form-select" aria-label="Выбор торгующей страны" id="countryTradingCalc">
+                            <option value="1">000 - Неизвестна</option>
+                        </select>
                     </div>
                 </div>
+                
+                <div class="mb-5">
+                    <div class="mb-4">
+                        <div class="h6 mb-3"><i class="fa-solid fa-money-bill-wave text-secondary me-1"></i> Фактурная стоимость товара</div>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="productAmount" class="form-label">Сумма</label>
+                                <input type="text" class="form-control" id="productAmount" value="0,00">
+                            </div>
+                            <div class="col">
+                                <label for="productCurrency" class="form-label">Валюта</label>
+                                <select class="form-select" aria-label="Выбор валюты" id="productCurrency">
+                                    <option value="1">987 - USD</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="productCourse" class="form-label">Курс</label>
+                                <input type="text" class="form-control" id="productCourse" value="12900,00">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="h6 mb-3"><i class="fa-solid fa-truck-fast text-secondary me-1"></i> Транспортный расход</div>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="transportAmount" class="form-label">Сумма</label>
+                                <input type="text" class="form-control" id="transportAmount" value="0,00">
+                            </div>
+                            <div class="col">
+                                <label for="transportCurrency" class="form-label">Валюта</label>
+                                <select class="form-select" aria-label="Выбор валюты" id="transportCurrency">
+                                    <option value="1">987 - USD</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="transportCourse" class="form-label">Курс</label>
+                                <input type="text" class="form-control" id="transportCourse" value="12900,00">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-baseline">
+                        <div class="fw-bold">Итого</div>
+                        <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                        <div>
+                            <span class="fw-bold">0 сум</span>
+                            <button type="button" class="link-secondary border-0 p-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#customsValueModal"><i class="fa-solid fa-circle-question text-secondary"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <div class="mb-4">
+                        <div class="h6 mb-3"><i class="fa-solid fa-money-bill-wave text-secondary me-1"></i> Количество товара</div>
+                        <div class="row g-3">
+                            <div class="col">
+                                <label for="productCourse" class="form-label">В шт</label>
+                                <input type="text" class="form-control" id="productCourse" value="0,00">
+                            </div>
+                            <div class="col">
+                                <label for="productCourse" class="form-label">В кг</label>
+                                <input type="text" class="form-control" id="productCourse" value="0,00">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="h6 mb-3"><i class="fa-solid fa-truck-fast text-secondary me-1"></i> Таможенный досмотр, часы</div>
+                        <div class="row g-3 mb-1">
+                            <div class="col">
+                                <label for="productCourse" class="form-label">Урочные</label>
+                                <input type="text" class="form-control" id="productCourse" value="0">
+                            </div>
+                            <div class="col">
+                                <label for="productCourse" class="form-label">Внеурочные</label>
+                                <input type="text" class="form-control" id="productCourse" value="0">
+                            </div>
+                        </div>
+                        <div class="small text-secondary text-end">1 БРВ = 340000 сум</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-baseline">
+                        <div class="fw-bold">Итого</div>
+                        <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                        <div>
+                            <span class="fw-bold">0 сум</span>
+                            <button type="button" class="link-secondary border-0 p-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#customsValueModal"><i class="fa-solid fa-circle-question text-secondary"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+                
+            
+                
+                
+                Цена сделки
+                0 USD
+                10. Там. сбор
+                0 БРВ
+                20. Там. пошлина
+                Выбрать
+                27. Акциз
+                Выбрать
+                29. НДС
+                Выбрать
+                79. Утил. сбор
+                Выбрать
+                Внимание! Все расчеты носят рекомендательный характер
+                Рассчитать
+
             </div>
         </div>
         <!-- КАЛЬКУЛЯТОР КОНЕЦ-->
-
         <!-- ЭКСПЕРТНЫЙ РЕЖИМ КОНЕЦ -->
-
-
 
         <!-- ПРОСТОЙ РЕЖИМ НАЧАЛО -->
         <div id="calcSimple" class="d-none">
@@ -490,6 +694,31 @@
         </div>
     </div>
     <!-- МЕНЮ КОНЕЦ -->
+
+    <!-- ТАМОЖЕННАЯ СТОИМОСТЬ НАЧАЛО -->
+    <div class="modal fade" id="customsValueModal" tabindex="-1" aria-labelledby="customsValueModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title h5" id="customsValueModalLabel">Таможенная стоимость</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body small">
+                    <div class="mb-3">Как рассчитывается таможенная стоимость</div>
+                    <div class="mb-3">К фактурной стоимости (в валюте контракта) прибавляем транспортный расход, переведя его в валюту контракта, потом эту сумму переводим в сумы, т.е.:</div>
+                    <div class="mb-3"><span class="fw-bold">ТС</span> = (<span class="fw-bold">ФС</span> + <span class="fw-bold">ТР</span> * <span class="fw-bold">квТР</span> / <span class="fw-bold">квФС</span>) * <span class="fw-bold">квФС</span></div>
+                    <ul class="mb-0">
+                        <li><span class="fw-bold">ТС</span> - таможенная стоимость;</li>
+                        <li><span class="fw-bold">ФС</span> - фактурная стоимость;</li>
+                        <li><span class="fw-bold">ТР</span> - транспортный расход;</li>
+                        <li><span class="fw-bold">квФС</span> - курс валюты <span class="fw-bold">ФС</span>;</li>
+                        <li><span class="fw-bold">квТР</span> - курс валюты <span class="fw-bold">ТР</span>;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ТАМОЖЕННАЯ СТОИМОСТЬ КОНЕЦ -->
     
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
