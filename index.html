@@ -561,7 +561,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-between align-items-baseline">
+                    <div class="small d-flex justify-content-between align-items-baseline">
                         <div class="fw-bold">Итого</div>
                         <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
                         <div>
@@ -573,66 +573,99 @@
 
                 <div class="mb-5">
                     <div class="mb-4">
-                        <div class="h6 mb-3"><i class="fa-solid fa-money-bill-wave text-secondary me-1"></i> Количество товара</div>
+                        <div class="h6 mb-3"><i class="fa-solid fa-weight-hanging text-secondary me-1"></i> Количество товара</div>
                         <div class="row g-3">
                             <div class="col">
-                                <label for="productCourse" class="form-label">В шт</label>
-                                <input type="text" class="form-control" id="productCourse" value="0,00">
+                                <label for="valueFirst" class="form-label">В шт</label>
+                                <input type="text" class="form-control" id="valueFirst" value="0,00">
                             </div>
                             <div class="col">
-                                <label for="productCourse" class="form-label">В кг</label>
-                                <input type="text" class="form-control" id="productCourse" value="0,00">
+                                <label for="valueSecond" class="form-label">В кг</label>
+                                <input type="text" class="form-control" id="valueSecond" value="0,00">
                             </div>
                         </div>
                     </div>
                     <div class="mb-4">
-                        <div class="h6 mb-3"><i class="fa-solid fa-truck-fast text-secondary me-1"></i> Таможенный досмотр, часы</div>
-                        <div class="row g-3 mb-1">
+                        <div class="h6 mb-3"><i class="fa-solid fa-person-military-pointing text-secondary me-1"></i> Таможенный досмотр, часы</div>
+                        <div class="row g-3 ">
                             <div class="col">
-                                <label for="productCourse" class="form-label">Урочные</label>
-                                <input type="text" class="form-control" id="productCourse" value="0">
+                                <label for="screeningHour" class="form-label">Урочные</label>
+                                <input type="text" class="form-control" id="screeningHour" value="0">
                             </div>
                             <div class="col">
-                                <label for="productCourse" class="form-label">Внеурочные</label>
-                                <input type="text" class="form-control" id="productCourse" value="0">
+                                <label for="screeningAfterHour" class="form-label">Внеурочные</label>
+                                <input type="text" class="form-control" id="screeningAfterHour" aria-describedby="screeningAfterHourHelp" value="0">
+                                <div id="screeningAfterHourHelp" class="form-text">1 БРВ = 340000 сум</div>
                             </div>
                         </div>
-                        <div class="small text-secondary text-end">1 БРВ = 340000 сум</div>
                     </div>
-                    <div class="d-flex justify-content-between align-items-baseline">
-                        <div class="fw-bold">Итого</div>
-                        <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
-                        <div>
-                            <span class="fw-bold">0 сум</span>
-                            <button type="button" class="link-secondary border-0 p-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#customsValueModal"><i class="fa-solid fa-circle-question text-secondary"></i></button>
+                    <div class="small">
+                        <div class="d-flex justify-content-between align-items-baseline mb-3">
+                            <div class="fw-bold">Цена сделки</div>
+                            <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                            <div class="fw-bold">0,00 USD</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-baseline mb-3">
+                            <div class="fw-bold">10. Там. сбор</div>
+                            <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                            <div class="fw-bold">1 БРВ</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-baseline mb-3">
+                            <div class="fw-bold">20. Там. пошлина</div>
+                            <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                            <div class="fw-bold">
+                                <span class="fw-bold">60%</span>
+                                <button type="button" class="link-secondary border-0 p-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#rateModal"><i class="fa-solid fa-pen-to-square text-secondary"></i></button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-baseline mb-3">
+                            <div class="fw-bold">27. Акциз</div>
+                            <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                            <div class="fw-bold">
+                                <span class="fw-bold">340 000 сум</span>
+                                <button type="button" class="link-secondary border-0 p-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#rateModal"><i class="fa-solid fa-pen-to-square text-secondary"></i></button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-baseline mb-3">
+                            <div class="fw-bold">29. НДС</div>
+                            <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                            <div class="fw-bold">
+                                <span class="fw-bold">12%</span>
+                                <button type="button" class="link-secondary border-0 p-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#rateModal"><i class="fa-solid fa-pen-to-square text-secondary"></i></button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-baseline">
+                            <div class="fw-bold">79. Утил. сбор</div>
+                            <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                            <div class="fw-bold">
+                                <button type="button" class="link-secondary border-0 p-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#rateModal"><span class="text-danger fw-bold">Выбрать</span></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
 
-                
-                
-            
-                
-                
-                Цена сделки
-                0 USD
-                10. Там. сбор
-                0 БРВ
-                20. Там. пошлина
-                Выбрать
-                27. Акциз
-                Выбрать
-                29. НДС
-                Выбрать
-                79. Утил. сбор
-                Выбрать
                 Внимание! Все расчеты носят рекомендательный характер
                 Рассчитать
 
             </div>
         </div>
         <!-- КАЛЬКУЛЯТОР КОНЕЦ-->
+
+        <!-- СТАВКА НАЧАЛО -->
+        <div class="modal fade" id="rateModal" tabindex="-1" aria-labelledby="rateModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title h5" id="rateModalLabel">20. Там. пошлина</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body small">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- СТАВКА КОНЕЦ -->
         <!-- ЭКСПЕРТНЫЙ РЕЖИМ КОНЕЦ -->
 
         <!-- ПРОСТОЙ РЕЖИМ НАЧАЛО -->
