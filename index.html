@@ -36,18 +36,18 @@
         </div>
 
         <!-- ЭКСПЕРТНЫЙ РЕЖИМ НАЧАЛО -->
-        <div id="calcExpert">
+        <div id="calcExpert" class="d-none">
             <div class="d-flex position-relative mb-4">
-                <button class="btn btn-primary rounded-end-0 p-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTree" aria-controls="offcanvasTree" style="width: 58px;">
+                <button class="btn btn-primary rounded-end-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTree" aria-controls="offcanvasTree" style="width: 58px;">
                     <i class="fa-solid fa-folder-tree"></i>
                 </button>
                 <form class="flex-fill position-relative" action="#">
-                    <input id="searchInput" type="text" class="form-control border-primary rounded-start-0 p-3" placeholder="Введите код ТН ВЭД">
-                    <button class="btn position-absolute top-50 end-0 translate-middle-y text-secondary" type="submit">
+                    <input id="searchInputExp" type="text" class="form-control border-primary rounded-start-0 py-3" placeholder="Введите код ТН ВЭД">
+                    <button class="btn position-absolute top-50 end-0 translate-middle-y text-secondary opacity-50" type="submit">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
-                <ul id="searchList" class="search-list list-unstyled bg-white p-3 mb-0 shadow rounded border position-absolute w-100 d-none" style="top: 58px;">
+                <ul id="searchListExp" class="search-list list-unstyled bg-white p-3 mb-0 shadow rounded border position-absolute w-100 d-none" style="top: 58px;">
                     <li class="mb-3 border-bottom pb-3">
                         <div class="mb-1">
                             <a class="link-dark link-opacity-75-hover text-decoration-none fw-bold" href="#">8703 80 000 1</a>
@@ -793,8 +793,66 @@
         <!-- ЭКСПЕРТНЫЙ РЕЖИМ КОНЕЦ -->
 
         <!-- ПРОСТОЙ РЕЖИМ НАЧАЛО -->
-        <div id="calcSimple" class="d-none">
-            Простой режим
+        <div id="calcSimple" >
+            <div class="d-flex position-relative mb-4">
+                <button class="btn btn-primary rounded-end-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTree" aria-controls="offcanvasTree">Категории</button>
+                <form class="flex-fill position-relative" action="#">
+                    <input id="searchInputSimp" type="text" class="form-control border-primary rounded-start-0 py-3" placeholder="Введите название">
+                    <button class="btn position-absolute top-50 end-0 translate-middle-y text-secondary opacity-50" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <ul id="searchListSimp" class="search-list list-unstyled bg-white p-3 mb-0 shadow rounded border position-absolute w-100 d-none" style="top: 58px;">
+                    <li class="mb-3 border-bottom pb-3">
+                        <div class="mb-1">
+                            <a class="link-dark link-opacity-75-hover text-decoration-none fw-bold" href="#">8703 80 000 1</a>
+                        </div>
+                        <div class="small text-secondary d-flex gap-3 mb-1 opacity-50">
+                            <div>Раздел XVII</div>
+                            <div>Группа 87</div>
+                        </div>
+                        <div class="small text-secondary line-clamp">
+                            Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили; Транспортные средства, приводимые в движение только электрическим двигателем, прочие; Прочие
+                        </div>
+                    </li>
+                    <li class="mb-3 border-bottom pb-3">
+                        <div class="mb-1">
+                            <a class="link-dark link-opacity-75-hover text-decoration-none fw-bold" href="#">8703 80 000 2</a>
+                        </div>
+                        <div class="small text-secondary d-flex gap-3 mb-1 opacity-50">
+                            <div>Раздел XVII</div>
+                            <div>Группа 87</div>
+                        </div>
+                        <div class="small text-secondary line-clamp">
+                            Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили; Транспортные средства, приводимые в движение только электрическим двигателем, прочие; Прочие
+                        </div>
+                    </li>
+                    <li class="mb-3 border-bottom pb-3">
+                        <div class="mb-1">
+                            <a class="link-dark link-opacity-75-hover text-decoration-none fw-bold" href="#">8703 80 000 3</a>
+                        </div>
+                        <div class="small text-secondary d-flex gap-3 mb-1 opacity-50">
+                            <div>Раздел XVII</div>
+                            <div>Группа 87</div>
+                        </div>
+                        <div class="small text-secondary line-clamp">
+                            Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили; Транспортные средства, приводимые в движение только электрическим двигателем, прочие; Прочие
+                        </div>
+                    </li>
+                    <li class="mb-3 border-bottom pb-3">
+                        <div class="mb-1">
+                            <a class="link-dark link-opacity-75-hover text-decoration-none fw-bold" href="#">8703 80 000 4</a>
+                        </div>
+                        <div class="small text-secondary d-flex gap-3 mb-1 opacity-50">
+                            <div>Раздел XVII</div>
+                            <div>Группа 87</div>
+                        </div>
+                        <div class="small text-secondary line-clamp">
+                            Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили; Транспортные средства, приводимые в движение только электрическим двигателем, прочие; Прочие
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!-- ПРОСТОЙ РЕЖИМ КОНЕЦ -->
 

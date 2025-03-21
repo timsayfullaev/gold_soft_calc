@@ -14,16 +14,21 @@ checkbox.addEventListener('change', () => {
     }
 });
 
+function toggleSearchList(field, list) {
 
-const input = document.getElementById('searchInput');
-const ul = document.getElementById('searchList');
+    let input = document.getElementById(field);
+    let ul = document.getElementById(list);
 
-input.addEventListener('input', () => {
-    if (input.value.trim() !== '') {
-        ul.classList.remove('d-none');
-        ul.classList.add('d-block');
-    } else {
-        ul.classList.remove('d-block');
-        ul.classList.add('d-none');
-    }
-});
+    input.addEventListener('input', () => {
+        if (input.value.trim() !== '') {
+            ul.classList.remove('d-none');
+            ul.classList.add('d-block');
+        } else {
+            ul.classList.remove('d-block');
+            ul.classList.add('d-none');
+        }
+    });
+}
+
+toggleSearchList('searchInputExp', 'searchListExp');
+toggleSearchList('searchInputSimp', 'searchListSimp');
