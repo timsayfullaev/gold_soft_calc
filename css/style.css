@@ -140,12 +140,12 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
-.tree-code a {
+.tree-code a, .tree-tag a {
     color: #212121;
     text-decoration: none;
 }
 
-.tree-code a span {
+.tree-code a span, .tree-tag a span {
     font-weight: bold;
 }
 
@@ -154,6 +154,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     -webkit-font-smoothing: antialiased;
     content: '\f02a';
+    position: absolute;
+    left: -16px;
+}
+
+.tree-tag a::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    content: '\f02b';
     position: absolute;
     left: -16px;
 }
@@ -181,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .search-list {
-    max-height: 448px;
+    max-height: 400px;
     overflow: auto;
 }
 
@@ -205,4 +214,100 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-check-input:checked[type=radio] {
     --bs-form-check-bg-image: url(../img/circle_radio.svg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.multi-graph {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.multi-graph:before {
+    content: '';
+    width: 300px;
+    height: 150px;
+    border: 50px solid rgba(0, 0, 0, .15);
+    border-bottom: none;
+    position: absolute;
+    box-sizing: border-box;
+    transform-origin: 50% 0%;
+    border-radius: 300px 300px 0 0;
+    left: 0;
+    top: 0;
+}
+.multi-graph .graph {
+    width: 300px;
+    height: 150px;
+    border: 50px solid var(--fill);
+    border-top: none;
+    position: absolute;
+    transform-origin: 50% 0% 0;
+    border-radius: 0 0 300px 300px;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    animation: 1s fillGraphAnimation ease-in;
+    transform: rotate(calc(1deg * ( var(--percentage) * 1.8 )));
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.multi-graph .graph:after {
+    content: attr(data-name) ' ' counter(varible) '%';
+    counter-reset: varible var(--percentage);
+    background: var(--fill);
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 12px;
+    height: 20px;
+    padding: 3px 5px;
+    top: 0px;
+    position: absolute;
+    left: 0;
+    transform: rotate(calc(-1deg * var(--percentage) * 1.8)) translate(-30px, 0px);
+    transition: 0.2s ease-in;
+    transform-origin: 0 50% 0;
+    opacity: 0;
+}
+.multi-graph .graph:hover {
+    opacity: 0.8;
+}
+.multi-graph .graph:hover:after {
+    opacity: 1;
+    left: 30px;
+}
+@keyframes fillAnimation {
+    0% {
+        transform: rotate(-45deg);
+   }
+    50% {
+        transform: rotate(135deg);
+   }
+}
+@keyframes fillGraphAnimation {
+    0% {
+        transform: rotate(0deg);
+   }
+    50% {
+        transform: rotate(180deg);
+   }
 }

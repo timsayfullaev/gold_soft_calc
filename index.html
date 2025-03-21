@@ -198,14 +198,14 @@
                 </div>
 
                 <div class="bg-light p-3 rounded-3 mb-4">
-                    <button class="btn-collapse border-0 bg-transparent p-0 d-flex align-items-center justify-content-between w-100 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDocs" aria-expanded="false" aria-controls="collapseDocs">
+                    <button class="btn-collapse border-0 bg-transparent p-0 d-flex align-items-center justify-content-between w-100 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDocsExpert" aria-expanded="false" aria-controls="collapseDocsExpert">
                         <span class="d-flex align-items-baseline gap-2">
                             <span class="h5 mb-0">Документы</span>
                             <span class="bg-primary fw-bold d-flex justify-content-center align-items-center rounded-circle" style="min-width: 24px; min-height: 24px;">4</span>
                         </span>
                         <i class="fa-solid fa-chevron-down"></i>
                     </button>
-                    <div class="collapse" id="collapseDocs">
+                    <div class="collapse" id="collapseDocsExpert">
                         <div class="pt-3">
                             <div class="border-bottom pb-3 mb-3">
                                 <div class="h6 mb-1">Лицензии</div>
@@ -792,10 +792,12 @@
         </div>
         <!-- ЭКСПЕРТНЫЙ РЕЖИМ КОНЕЦ -->
 
+
+
         <!-- ПРОСТОЙ РЕЖИМ НАЧАЛО -->
         <div id="calcSimple" >
             <div class="d-flex position-relative mb-4">
-                <button class="btn btn-primary rounded-end-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTree" aria-controls="offcanvasTree">Категории</button>
+                <button class="btn btn-primary rounded-end-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCategories" aria-controls="offcanvasCategories">Категории</button>
                 <form class="flex-fill position-relative" action="#">
                     <input id="searchInputSimp" type="text" class="form-control border-primary rounded-start-0 py-3" placeholder="Введите название">
                     <button class="btn position-absolute top-50 end-0 translate-middle-y text-secondary opacity-50" type="submit">
@@ -804,55 +806,333 @@
                 </form>
                 <ul id="searchListSimp" class="search-list list-unstyled bg-white p-3 mb-0 shadow rounded border position-absolute w-100 d-none" style="top: 58px;">
                     <li class="mb-3 border-bottom pb-3">
-                        <div class="mb-1">
-                            <a class="link-dark link-opacity-75-hover text-decoration-none fw-bold" href="#">8703 80 000 1</a>
-                        </div>
-                        <div class="small text-secondary d-flex gap-3 mb-1 opacity-50">
-                            <div>Раздел XVII</div>
-                            <div>Группа 87</div>
-                        </div>
-                        <div class="small text-secondary line-clamp">
-                            Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили; Транспортные средства, приводимые в движение только электрическим двигателем, прочие; Прочие
+                        <div class="small line-clamp">
+                            <a class="link-dark link-opacity-75-hover text-decoration-none" href="#">Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили; Транспортные средства, приводимые в движение только электрическим двигателем, прочие; Прочие</a>
                         </div>
                     </li>
                     <li class="mb-3 border-bottom pb-3">
-                        <div class="mb-1">
-                            <a class="link-dark link-opacity-75-hover text-decoration-none fw-bold" href="#">8703 80 000 2</a>
-                        </div>
-                        <div class="small text-secondary d-flex gap-3 mb-1 opacity-50">
-                            <div>Раздел XVII</div>
-                            <div>Группа 87</div>
-                        </div>
-                        <div class="small text-secondary line-clamp">
-                            Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили; Транспортные средства, приводимые в движение только электрическим двигателем, прочие; Прочие
+                        <div class="small line-clamp">
+                            <a class="link-dark link-opacity-75-hover text-decoration-none" href="#">Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили; Транспортные средства, приводимые в движение только электрическим двигателем, прочие; Прочие</a>
                         </div>
                     </li>
                     <li class="mb-3 border-bottom pb-3">
-                        <div class="mb-1">
-                            <a class="link-dark link-opacity-75-hover text-decoration-none fw-bold" href="#">8703 80 000 3</a>
-                        </div>
-                        <div class="small text-secondary d-flex gap-3 mb-1 opacity-50">
-                            <div>Раздел XVII</div>
-                            <div>Группа 87</div>
-                        </div>
-                        <div class="small text-secondary line-clamp">
-                            Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили; Транспортные средства, приводимые в движение только электрическим двигателем, прочие; Прочие
+                        <div class="small line-clamp">
+                            <a class="link-dark link-opacity-75-hover text-decoration-none" href="#">Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили; Транспортные средства, приводимые в движение только электрическим двигателем, прочие; Прочие</a>
                         </div>
                     </li>
                     <li class="mb-3 border-bottom pb-3">
-                        <div class="mb-1">
-                            <a class="link-dark link-opacity-75-hover text-decoration-none fw-bold" href="#">8703 80 000 4</a>
+                        <div class="small line-clamp">
+                            <a class="link-dark link-opacity-75-hover text-decoration-none" href="#">Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили; Транспортные средства, приводимые в движение только электрическим двигателем, прочие; Прочие</a>
                         </div>
-                        <div class="small text-secondary d-flex gap-3 mb-1 opacity-50">
-                            <div>Раздел XVII</div>
-                            <div>Группа 87</div>
-                        </div>
-                        <div class="small text-secondary line-clamp">
-                            Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили; Транспортные средства, приводимые в движение только электрическим двигателем, прочие; Прочие
+                    </li>
+                    <li class="mb-3 border-bottom pb-3">
+                        <div class="small line-clamp">
+                            <a class="link-dark link-opacity-75-hover text-decoration-none" href="#">Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили; Транспортные средства, приводимые в движение только электрическим двигателем, прочие; Прочие</a>
                         </div>
                     </li>
                 </ul>
             </div>
+
+            <div class="mb-4">
+                <div class="mb-2">Единца измерения <span class="fw-bold">шт</span></div>
+                <div class="small text-secondary mb-2 line-clamp">
+                    Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили
+                </div>
+                <button type="button" class="link-secondary border-0 bg-transparent p-0 border-bottom" style="border-style: dashed !important;" data-bs-toggle="modal" data-bs-target="#simpleDescriptionModal">
+                    Показать описание
+                </button>
+            </div>
+
+            <div>
+                <div class="bg-light p-3 rounded-3 mb-4">
+                    <div class="h5 mb-3">Страна</div>
+                    <div>
+                        <select class="form-select" aria-label="Выбор торгующей страны">
+                            <option value="1">000 - Неизвестна</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="bg-light p-3 rounded-3 mb-4">
+                    <button class="btn-collapse border-0 bg-transparent p-0 d-flex align-items-center justify-content-between w-100 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDocsSimple" aria-expanded="false" aria-controls="collapseDocsSimple">
+                        <span class="d-flex align-items-baseline gap-2">
+                            <span class="h5 mb-0">Документы</span>
+                            <span class="bg-primary fw-bold d-flex justify-content-center align-items-center rounded-circle" style="min-width: 24px; min-height: 24px;">4</span>
+                        </span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="collapse" id="collapseDocsSimple">
+                        <div class="pt-3">
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="h6 mb-1">Лицензии</div>
+                                <div class="small">
+                                    <div>Лицензий не требуется</div>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="h6 mb-1">Сертификаты</div>
+                                <div class="small">
+                                    <ul class="mb-0">
+                                        <li class="mb-1">При импорте новых колесных транспортных средств категорий «M» и «N», оснащенных газовыми, бензиновыми и дизельными двигателями, требуется экологический сертификат о соответствии требованиям экологического стандарта не ниже Евро-4 - <span class="text-secondary"> ПКМ № 50 от 30.01.2020</span></li>
+                                        <li>По данному товару необходимо предоставить сертификат соответствия или письмо Узстандарта (Сертификат не требуется для предметов материально-технического снабжения и снаряжения, топлива, продовольствия и пр. тов., необходимых для нормальной эксплуатации предприятиями и организациями РУ, и арендованных этими предприятиями транспортных средств, осуществляющих международные перевозки (Глава 2.1, пункт 50.1, МЮ 1458 от 18 марта 2005 г.)) - <span class="text-secondary">ПКМ 43 от 30.01.2021</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="h6 mb-1">Льготы</div>
+                                <div class="small">
+                                    <div>Льготы не предусмотрены</div>
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="h6 mb-1">Иные требования</div>
+                                <div class="small">
+                                    <ul class="mb-0">
+                                        <li class="mb-1">Вывоз через товарносырьевые биржи осуществляется только за свободно конвертируемую валюту. - <span class="text-secondary">ПКМ № 174 от 15.04.1999г</span>.</li>
+                                        <li>Товар входит в перечень потребительских товаров. - <span class="text-secondary">МЮ 2500 от 12.08.2013г</span>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-danger fw-bold mb-3"><i class="fa-solid fa-triangle-exclamation"></i> Важно!</div>
+                                <div class="small">
+                                    <div class="mb-3">
+                                        В данном разделе могут <span class="text-danger fw-bold">отсутствовать</span> те НПА, в которых <span class="text-danger fw-bold">нет конкретных сведений о группах и кодах</span> товаров. Тем не менее, они должны приниматься в расчёт при оформлении.
+                                    </div>
+                                    <div>
+                                        Например, формулировка <span class="fw-bold">«Медицинское изделие»</span> — слишком размыта и может подойти к большей части всех кодов ТНВЭД. Решение о том, причислять ли декларируемый товар к медицинским изделиям, в каждом случае зависит от контекста и должно быть принято декларирующим лицом.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-light p-3 rounded-3">
+                    <div class="h5 mb-4">Калькулятор</div>
+                    
+                    <div class="mb-4">
+                        <div class="h6 mb-3"><i class="fa-solid fa-money-bill-wave text-secondary me-1"></i> Фактурная стоимость товара</div>
+                        <div class="row g-3">
+                            <div class="col">
+                                <label for="productAmountSimple" class="form-label">Сумма</label>
+                                <input type="text" class="form-control" id="productAmountSimple" value="0,00">
+                            </div>
+                            <div class="col">
+                                <label for="productCurrencySimple" class="form-label">Валюта</label>
+                                <select class="form-select" aria-label="Выбор валюты" id="productCurrencySimple">
+                                    <option value="1">987 - USD</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="h6 mb-3"><i class="fa-solid fa-truck-fast text-secondary me-1"></i> Транспортный расход</div>
+                        <div class="row g-3">
+                            <div class="col">
+                                <label for="transportAmountSimple" class="form-label">Сумма</label>
+                                <input type="text" class="form-control" id="transportAmountSimple" value="0,00">
+                            </div>
+                            <div class="col">
+                                <label for="transportCurrencySimple" class="form-label">Валюта</label>
+                                <select class="form-select" aria-label="Выбор валюты" id="transportCurrencySimple">
+                                    <option value="1">987 - USD</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="small mb-4">
+                        <div class="d-flex justify-content-between align-items-baseline">
+                            <div>Итого</div>
+                            <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                            <div>
+                                <button type="button" class="link-dark link-opacity-75-hover border-0 p-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#customsValueModal">0 сум <i class="fa-solid fa-circle-question opacity-50"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="h6 mb-3"><i class="fa-solid fa-weight-hanging text-secondary me-1"></i> Количество товара</div>
+                        <div class="row g-3">
+                            <div class="col">
+                                <label for="valueFirstSimple" class="form-label">В шт</label>
+                                <input type="text" class="form-control" id="valueFirstSimple" value="0,00">
+                            </div>
+                            <div class="col">
+                                <label for="valueSecondSimple" class="form-label">В кг</label>
+                                <input type="text" class="form-control" id="valueSecondSimple" value="0,00">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="small text-danger text-center">
+                            Внимание! Все расчеты носят рекомендательный характер
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-primary w-100 p-3 mb-4">Рассчитать</button>
+
+                    <div class="mb-4">
+                        <div class="h6 mb-3"><i class="fa-solid fa-coins text-secondary me-1"></i> Уплаты таможенных платежей</div>
+
+                        
+
+
+
+
+                        <div class="multi-graph margin">
+                            JavaScript
+                            <div class="graph" data-name="jQuery" 
+                                 style="--percentage : 75; --fill: #0669AD ;">
+                            </div>
+                            <div class="graph" data-name="Angular" 
+                                 style="--percentage : 50; --fill: #E62A39 ;">
+                            </div>
+                            <div class="graph" data-name="React" 
+                                 style="--percentage : 25; --fill: #FEDA3E ;">
+                            </div>
+                          </div>
+
+
+
+
+
+
+
+
+                        <div class="small">
+                            <div class="d-flex justify-content-between align-items-baseline mb-1">
+                                <div>10. Там. сбор</div>
+                                <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                                <div>340 000,00</div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-baseline mb-1">
+                                <div>20. Там. пошлина</div>
+                                <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                                <div>0,00</div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-baseline mb-1">
+                                <div>27. Акциз</div>
+                                <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                                <div>0,00</div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-baseline mb-1">
+                                <div>29. НДС</div>
+                                <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                                <div>3 096 000,00</div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-baseline mb-1">
+                                <div>79. Утил. сбор</div>
+                                <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                                <div>30 600 000,00</div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-baseline fw-bold">
+                                <div>Итого</div>
+                                <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
+                                <div>35 481 000,00 сум</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-sm w-100 mb-5 opacity-50" data-bs-toggle="modal" data-bs-target="#specialistModal">Найти специалиста <br>для таможенного оформления</button>
+
+                    <div class="row">
+                        <div class="col">
+                            <a class="link-secondary text-decoration-none d-flex flex-column gap-2 align-items-center" href="#">
+                                <span class="d-flex align-items-center justify-content-center rounded-circle" style="background-color: #ECEFF1; height: 48px; width: 48px;">
+                                    <i class="fa-solid fa-share-nodes fa-lg"></i>
+                                </span>
+                                <span class="small">Поделиться</span>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="link-secondary text-decoration-none d-flex flex-column gap-2 align-items-center" href="#">
+                                <span class="d-flex align-items-center justify-content-center rounded-circle" style="background-color: #ECEFF1; height: 48px; width: 48px;">
+                                    <i class="fa-solid fa-cloud-arrow-down fa-lg"></i>
+                                </span>
+                                <span class="small">Скачать</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- КАТЕГОРИИ НАЧАЛО -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCategories" aria-labelledby="offcanvasCategoriesLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasCategoriesLabel">Категории</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="tree">
+                        <li>
+                            <details>
+                                <summary>Раздел</summary>
+                                <ul>
+                                    <li>
+                                        <details>
+                                            <summary>Группа</summary>
+                                            <ul>
+                                                <li>
+                                                    <details>
+                                                        <summary>Категория</summary>
+                                                        <ul>
+                                                            <li>
+                                                                <details>
+                                                                    <summary>Подкатегория</summary>
+                                                                    <ul>
+                                                                        <li class="tree-tag"><a href="#"><span>0101 21 000 0</span>: чистопородные племенные животные</a></li>
+                                                                    </ul>
+                                                                </details>
+                                                            </li>
+                                                        </ul>
+                                                    </details>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- КАТЕГОРИИ КОНЕЦ -->
+
+            <!-- ПРОСТОЕ ОПИСАНИЕ НАЧАЛО -->
+            <div class="modal fade" id="simpleDescriptionModal" tabindex="-1" aria-labelledby="simpleDescriptionModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title h5" id="simpleDescriptionModalLabel">Описание</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>Автомобили легковые и прочие моторные транспортные средства, предназначенные главным образом для перевозки людей (кроме моторных транспортных средств товарной позиции 8702), включая грузопассажирские автомобили-фургоны и гоночные автомобили</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ПРОСТОЕ ОПИСАНИЕ КОНЕЦ-->
+
+            <!-- НАЙТИ СПЕЦИАЛИСТА НАЧАЛО -->
+            <div class="modal fade" id="specialistModal" tabindex="-1" aria-labelledby="specialistModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title h5" id="specialistModalLabel">Найти специалиста</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>Функция скоро будет доступна</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- НАЙТИ СПЕЦИАЛИСТА КОНЕЦ-->
         </div>
         <!-- ПРОСТОЙ РЕЖИМ КОНЕЦ -->
 
