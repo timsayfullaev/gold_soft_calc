@@ -79,12 +79,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tree {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .tree, .tree ul {
     list-style: none;
-    padding-left: 16px;
+    padding-left: 22px;
 }
 
 .tree summary {
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-font-smoothing: antialiased;
     content: '\f07b';
     position: absolute;
-    left: -16px;
+    left: -22px;
     color: #FFD700;
 }
 
@@ -113,21 +113,21 @@ h1, h2, h3, h4, h5, h6 {
 .tree li::before {
     content: '';
     position: absolute;
-    left: -27px;
+    left: -37px;
     top: -8px;
     border-left: 1px solid #BDBDBD;
     border-bottom: 1px solid #BDBDBD;
-    width: 11px;
-    height: 17px;
+    width: 15px;
+    height: 19px;
 }
 
 .tree li::after {
     content: '';
     position: absolute;
-    left: -27px;
+    left: -37px;
     bottom: 0;
     border-left: 1px solid #BDBDBD;
-    width: 11px;
+    width: 15px;
     height: 100%;
 }
 
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-font-smoothing: antialiased;
     content: '\f02a';
     position: absolute;
-    left: -16px;
+    left: -22px;
 }
 
 .tree-tag a::before {
@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-font-smoothing: antialiased;
     content: '\f02b';
     position: absolute;
-    left: -16px;
+    left: -22px;
 }
 
 .tree summary {
@@ -174,11 +174,11 @@ h1, h2, h3, h4, h5, h6 {
 .tree details[open] > summary::after {
     content: '';
     position: absolute;
-    left: -11px;
+    left: -15px;
     bottom: 0;
     border-left: 1px solid #BDBDBD;
-    width: 11px;
-    height: calc(100% - 14px);
+    width: 15px;
+    height: calc(100% - 17px);
 }
 
 .line-clamp {
@@ -215,18 +215,6 @@ h1, h2, h3, h4, h5, h6 {
 .form-check-input:checked[type=radio] {
     --bs-form-check-bg-image: url(../img/circle_radio.svg);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .meter {
     position: relative;
