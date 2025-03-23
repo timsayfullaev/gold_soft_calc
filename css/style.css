@@ -269,34 +269,34 @@ h1, h2, h3, h4, h5, h6 {
 
 .meter .meter-duty {
     z-index: 5;
-    border-color: #F25764;
+    border-color: #BD76BC;
     animation-name: rotate-duty;
 }
 
 .meter .meter-fee {
     z-index: 4;
-    border-color: #F27C38;
+    border-color: #5496C2;
     animation-name: rotate-fee;
     animation-delay: .25s;
 }
 
 .meter .meter-tax {
     z-index: 3;
-    border-color: #F2C029;
+    border-color: #40C2BE;
     animation-name: rotate-tax;
     animation-delay: .5s;
 }
 
 .meter .meter-vat {
     z-index: 2;
-    border-color: #50BF77;
+    border-color: #DBC34B;
     animation-name: rotate-vat;
     animation-delay: .75s;
 }
 
 .meter .meter-disposal {
     z-index: 1;
-    border-color: #14C5D9;
+    border-color: #E07872;
     animation-name: rotate-disposal;
     animation-delay: 1.0s;
 }
