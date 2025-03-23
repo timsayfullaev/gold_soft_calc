@@ -230,9 +230,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .meter {
     position: relative;
-    width: 350px;
-    height: 175px;
+    width: 260px;
+    height: 130px;
     overflow: hidden;
+    margin-bottom: 16px;
 }
 
 .meter::before {
@@ -243,10 +244,10 @@ h1, h2, h3, h4, h5, h6 {
     content: '';
     width: inherit;
     height: inherit;
-    border: 45px solid rgba(211, 211, 211, .3);
+    border: 65px solid #ECEFF1;
     border-bottom: none;
-    border-top-left-radius: 175px;
-    border-top-right-radius: 175px;
+    border-top-left-radius: 130px;
+    border-top-right-radius: 130px;
 }
 
 .meter div {
@@ -255,10 +256,10 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: inherit;
     height: inherit;
-    border: 45px solid;
+    border: 65px solid;
     border-top: none;
-    border-bottom-left-radius: 175px;
-    border-bottom-right-radius: 175px;
+    border-bottom-left-radius: 130px;
+    border-bottom-right-radius: 130px;
     transform-origin: 50% 0;
     animation-fill-mode: forwards;
     animation-duration: .25s;
@@ -311,7 +312,6 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         transform: rotate(calc(var(--percent-duty) / 100 * 180deg));
     }
-
     100% {
         transform: rotate(calc((var(--percent-duty) + var(--percent-fee)) / 100 * 180deg));
     }
@@ -321,7 +321,6 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         transform: rotate(calc((var(--percent-duty) + var(--percent-fee)) / 100 * 180deg));
     }
-
     100% {
         transform: rotate(calc((var(--percent-duty) + var(--percent-fee) + var(--percent-tax)) / 100 * 180deg));
     }
@@ -331,7 +330,6 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         transform: rotate(calc((var(--percent-duty) + var(--percent-fee) + var(--percent-tax)) / 100 * 180deg));
     }
-
     100% {
         transform: rotate(calc((var(--percent-duty) + var(--percent-fee) + var(--percent-tax) + var(--percent-vat)) / 100 * 180deg));
     }
@@ -341,8 +339,56 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         transform: rotate(calc((var(--percent-duty) + var(--percent-fee) + var(--percent-tax) + var(--percent-vat)) / 100 * 180deg));
     }
-
     100% {
         transform: rotate(calc((var(--percent-duty) + var(--percent-fee) + var(--percent-tax) + var(--percent-vat) + var(--percent-disposal)) / 100 * 180deg));
     }
+}
+
+.legend {
+    margin-bottom: 16px;
+}
+
+.legend div {
+    margin-bottom: 8px;
+}
+
+.legend-square {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.legend-duty .legend-square {
+    background-color: #BD76BC;
+}
+
+.legend-fee .legend-square {
+    background-color: #5496C2;
+}
+
+.legend-tax .legend-square {
+    background-color: #40C2BE;
+}
+
+.legend-vat .legend-square {
+    background-color: #DBC34B;
+}
+
+.legend-disposal .legend-square {
+    background-color: #E07872;
+}
+
+.legend-text {
+    font-size: 14px;
+}
+
+.legend-text span {
+    font-weight: bold;
+}
+
+.total {
+    font-weight: bold;
+    text-transform: uppercase;
 }

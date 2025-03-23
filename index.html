@@ -976,21 +976,9 @@
                     <button type="button" class="btn btn-primary w-100 p-3 mb-4">Рассчитать</button>
 
                     <div class="mb-4">
-                        <div class="h6 mb-3"><i class="fa-solid fa-coins text-secondary me-1"></i> Уплаты таможенных платежей</div>
+                        <div class="h6 mb-4"><i class="fa-solid fa-coins text-secondary me-1"></i> Уплаты таможенных платежей</div>
 
-                        
-
-
-
-
-
-                        <div class="meter" style="
-                            --percent-duty: 5;
-                            --percent-fee: 10;
-                            --percent-tax: 15;
-                            --percent-vat: 20;
-                            --percent-disposal: 50;
-                        ">
+                        <div class="meter" style="--percent-duty: 5; --percent-fee: 10; --percent-tax: 15; --percent-vat: 20;--percent-disposal: 50;">
                             <div class="meter-duty"></div>
                             <div class="meter-fee"></div>
                             <div class="meter-tax"></div>
@@ -998,47 +986,33 @@
                             <div class="meter-disposal"></div>
                         </div>
 
-
-
-
-
-
-
-
-
-
-                        <div class="small">
-                            <div class="d-flex justify-content-between align-items-baseline mb-1">
-                                <div>10. Там. сбор</div>
-                                <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
-                                <div>340 000,00</div>
+                        <div class="legend">
+                            <div class="legend-duty">
+                                <span class="legend-square"></span>
+                                <span class="legend-text">10. Там. сбор (5%) <span>340 000,00</span></span>
                             </div>
-                            <div class="d-flex justify-content-between align-items-baseline mb-1">
-                                <div>20. Там. пошлина</div>
-                                <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
-                                <div>0,00</div>
+                            <div class="legend-fee">
+                                <span class="legend-square"></span>
+                                <span class="legend-text">20. Там. пошлина (10%) <span>0,00</span></span>
                             </div>
-                            <div class="d-flex justify-content-between align-items-baseline mb-1">
-                                <div>27. Акциз</div>
-                                <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
-                                <div>0,00</div>
+                            <div class="legend-tax">
+                                <span class="legend-square"></span>
+                                <span class="legend-text">27. Акциз (15%) <span>0,00</span></span>
                             </div>
-                            <div class="d-flex justify-content-between align-items-baseline mb-1">
-                                <div>29. НДС</div>
-                                <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
-                                <div>3 096 000,00</div>
+                            <div class="legend-vat">
+                                <span class="legend-square"></span>
+                                <span class="legend-text">29. НДС (20%) <span>3 096 000,00</span></span>
                             </div>
-                            <div class="d-flex justify-content-between align-items-baseline mb-1">
-                                <div>79. Утил. сбор</div>
-                                <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
-                                <div>30 600 000,00</div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-baseline fw-bold">
-                                <div>Итого</div>
-                                <div class="flex-fill border-bottom" style="border-bottom-style: dotted !important;"></div>
-                                <div>35 481 000,00 сум</div>
+                            <div class="legend-disposal">
+                                <span class="legend-square"></span>
+                                <span class="legend-text">79. Утил. сбор (50%) <span>30 600 000,00</span></span>
                             </div>
                         </div>
+
+                        <div class="total">
+                            Итого 35 481 000,00 сум
+                        </div>
+
                     </div>
 
                     <button type="button" class="btn btn-primary btn-sm w-100 mb-5 opacity-50" data-bs-toggle="modal" data-bs-target="#specialistModal">Найти специалиста <br>для таможенного оформления</button>
