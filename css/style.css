@@ -227,87 +227,122 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.multi-graph {
-    width: 300px;
-    height: 150px;
+
+.meter {
     position: relative;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 600;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    width: 350px;
+    height: 175px;
     overflow: hidden;
-    box-sizing: border-box;
 }
-.multi-graph:before {
+
+.meter::before {
+    position: absolute;
+}
+
+.meter::before {
     content: '';
-    width: 300px;
-    height: 150px;
-    border: 50px solid rgba(0, 0, 0, .15);
+    width: inherit;
+    height: inherit;
+    border: 45px solid rgba(211, 211, 211, .3);
     border-bottom: none;
-    position: absolute;
-    box-sizing: border-box;
-    transform-origin: 50% 0%;
-    border-radius: 300px 300px 0 0;
-    left: 0;
-    top: 0;
+    border-top-left-radius: 175px;
+    border-top-right-radius: 175px;
 }
-.multi-graph .graph {
-    width: 300px;
-    height: 150px;
-    border: 50px solid var(--fill);
-    border-top: none;
+
+.meter div {
     position: absolute;
-    transform-origin: 50% 0% 0;
-    border-radius: 0 0 300px 300px;
-    left: 0;
     top: 100%;
-    z-index: 5;
-    animation: 1s fillGraphAnimation ease-in;
-    transform: rotate(calc(1deg * ( var(--percentage) * 1.8 )));
-    box-sizing: border-box;
-    cursor: pointer;
-}
-.multi-graph .graph:after {
-    content: attr(data-name) ' ' counter(varible) '%';
-    counter-reset: varible var(--percentage);
-    background: var(--fill);
-    box-sizing: border-box;
-    border-radius: 2px;
-    color: #fff;
-    font-weight: 200;
-    font-size: 12px;
-    height: 20px;
-    padding: 3px 5px;
-    top: 0px;
-    position: absolute;
     left: 0;
-    transform: rotate(calc(-1deg * var(--percentage) * 1.8)) translate(-30px, 0px);
-    transition: 0.2s ease-in;
-    transform-origin: 0 50% 0;
-    opacity: 0;
+    width: inherit;
+    height: inherit;
+    border: 45px solid;
+    border-top: none;
+    border-bottom-left-radius: 175px;
+    border-bottom-right-radius: 175px;
+    transform-origin: 50% 0;
+    animation-fill-mode: forwards;
+    animation-duration: .25s;
+    animation-timing-function: linear;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
-.multi-graph .graph:hover {
-    opacity: 0.8;
+
+.meter .meter-duty {
+    z-index: 5;
+    border-color: #F25764;
+    animation-name: rotate-duty;
 }
-.multi-graph .graph:hover:after {
-    opacity: 1;
-    left: 30px;
+
+.meter .meter-fee {
+    z-index: 4;
+    border-color: #F27C38;
+    animation-name: rotate-fee;
+    animation-delay: .25s;
 }
-@keyframes fillAnimation {
+
+.meter .meter-tax {
+    z-index: 3;
+    border-color: #F2C029;
+    animation-name: rotate-tax;
+    animation-delay: .5s;
+}
+
+.meter .meter-vat {
+    z-index: 2;
+    border-color: #50BF77;
+    animation-name: rotate-vat;
+    animation-delay: .75s;
+}
+
+.meter .meter-disposal {
+    z-index: 1;
+    border-color: #14C5D9;
+    animation-name: rotate-disposal;
+    animation-delay: 1.0s;
+}
+
+@keyframes rotate-duty {
+    100% {
+        transform: rotate(calc(var(--percent-duty) / 100 * 180deg));
+    }
+}
+
+@keyframes rotate-fee {
     0% {
-        transform: rotate(-45deg);
-   }
-    50% {
-        transform: rotate(135deg);
-   }
+        transform: rotate(calc(var(--percent-duty) / 100 * 180deg));
+    }
+
+    100% {
+        transform: rotate(calc((var(--percent-duty) + var(--percent-fee)) / 100 * 180deg));
+    }
 }
-@keyframes fillGraphAnimation {
+
+@keyframes rotate-tax {
     0% {
-        transform: rotate(0deg);
-   }
-    50% {
-        transform: rotate(180deg);
-   }
+        transform: rotate(calc((var(--percent-duty) + var(--percent-fee)) / 100 * 180deg));
+    }
+
+    100% {
+        transform: rotate(calc((var(--percent-duty) + var(--percent-fee) + var(--percent-tax)) / 100 * 180deg));
+    }
+}
+
+@keyframes rotate-vat {
+    0% {
+        transform: rotate(calc((var(--percent-duty) + var(--percent-fee) + var(--percent-tax)) / 100 * 180deg));
+    }
+
+    100% {
+        transform: rotate(calc((var(--percent-duty) + var(--percent-fee) + var(--percent-tax) + var(--percent-vat)) / 100 * 180deg));
+    }
+}
+
+@keyframes rotate-disposal {
+    0% {
+        transform: rotate(calc((var(--percent-duty) + var(--percent-fee) + var(--percent-tax) + var(--percent-vat)) / 100 * 180deg));
+    }
+
+    100% {
+        transform: rotate(calc((var(--percent-duty) + var(--percent-fee) + var(--percent-tax) + var(--percent-vat) + var(--percent-disposal)) / 100 * 180deg));
+    }
 }
